@@ -1,6 +1,9 @@
 
 ul {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
@@ -9,14 +12,29 @@ a {
 }
 button {
     cursor: pointer;
+
+}
+p, 
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 0;
+margin-bottom: 0;
+
+}
+img {
+    display: block;
 }
 .visually-hidden {
-
-    
+position: absolute;
+    width: 1px;
+    height: 1px ;
     margin: -1px;
     border: 0;
-    
-
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -28,6 +46,28 @@ body {
     color: #434455 ;
     background-color : #FFFFFF ;
 }
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header {
+ 
+border-bottom: 1px solid #e7e9fc;
+
+}
+
+.header-container {
+display: flex;
+    
+
+}
+
+.header-navigation {
+display: flex;
+align-items: center;
+
+}
 .header-logo {
 font-family: "Raleway" ,sans-serif ;
     font-size: 18px;
@@ -36,6 +76,9 @@ font-family: "Raleway" ,sans-serif ;
     letter-spacing: 0.03em;
     color: #4d5ae5 ;
     text-transform: uppercase ;
+    margin-right: 76px;
+    padding: 24px 0;
+    
 
 }
 .header-logo-color  {
@@ -44,11 +87,21 @@ color: #2e2f42;
 }
 .header-menu-link {
     font-size: 16px;
+    display: inline-block;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing : 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+  padding-bottom: 24px;
 }
+.menu-list {
+
+    display: flex;
+    gap: 40px;
+}
+
+
 .header-menu-link:hover ,.header-menu-link:focus {
  color: #404BBF;   
 }
@@ -56,19 +109,31 @@ color: #2e2f42;
 
 .header-address {
    font-style: normal; 
+   margin-left: auto;
+   
 }
 
-.header-address-list {}
+.header-address-list {
+    display: flex;
+    gap: 40px;
 
-.header-address-item {}
+}
+
+.header-address-item {
+   
+}
 
 .header-address-link {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;   
+color: #434455;  
+padding-top: 24px;
+padding-bottom: 24px;
+display: inline-block;
 }
+
 
 .header-address-link:hover, .header-address-link:focus {
 color:  #404BBF;
@@ -78,9 +143,18 @@ color:  #404BBF;
 
 
 .hero {
-    background-color: #2E2F42  ;
+    
 
 }
+.hero-container {
+background-color: #2E2F42  ;
+padding-top : 196px ;
+padding-right: 316px ;
+padding-bottom: 292px;
+padding-left: 316px;
+
+}
+
 
 .hero-title {
     
@@ -90,7 +164,11 @@ color:  #404BBF;
         letter-spacing: 0.02em;
         text-align: center ;
         color: #fff;
+        max-width:  496px;
+        margin: 0 auto;
+        margin-bottom: 48px;
 }
+
 
 .hero-primary-btn {
     font-weight: 500;
@@ -98,7 +176,12 @@ color:  #404BBF;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-background-color:  #4D5AE5;
+    background-color: #4D5AE5;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: none;
 }
 .hero-primary-btn:hover {
 
@@ -108,13 +191,23 @@ background: #404BBF;
     background: #404BBF;
 }
 
-.features {
+.features-container {
+padding-top: 112px;
+padding-bottom: 120px ;
 
 }
 
-.features-list {}
+.features-list {
+    display: flex;
+    gap: 24px;
+    
+}
 
-.features-item {}
+
+
+.features-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
 
 .features-subtitle {
     
@@ -123,6 +216,8 @@ background: #404BBF;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
+        
 }
 
 .features-item-text {
@@ -134,7 +229,13 @@ background: #404BBF;
         color: #434455;
 }
 .team {
-    background-color: #F4F4FD ;
+    
+}
+.team-container {
+background-color: #F4F4FD ;
+padding-top: 120px;
+padding-bottom: 120px;
+
 }
 
 .team-title {
@@ -145,16 +246,31 @@ background: #404BBF;
         text-align: center ;
         text-transform: capitalize ;
         color: #2e2f42;
+        
+        margin: 0 auto;
+        margin-bottom: 72px;
+        
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+justify-content: center;
+}
+
 
 .team-item {
   background-color: #FFFFFF ;  
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+border-radius: 0 0 4px 4px;
+
 }
 
 
-.team-imag {}
+
+
+.team-imag {
+}
 
 .team-subtitle {
         font-weight: 500;
@@ -162,18 +278,31 @@ background: #404BBF;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
+       
 }
-
+.team-subtitle-text{
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
+    text-align: center;
+}
 .team-text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        
 }
 
 .portfolio {}
 
+.portfolio-container {
+padding-top: 120px;
+padding-bottom: 120px;
+
+}
 .portfolio-title {
         font-weight: 700;
         font-size: 36px;
@@ -182,12 +311,28 @@ background: #404BBF;
         text-align: center ;
         text-transform: capitalize ;
         color: #2e2f42;
+        margin: 0 auto;
+        margin-bottom: 72px
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
 
-.portfolio-item {}
+.portfolio-item {
+    
+}
+.portfolio-subtitle-text {
 
+    padding-top:32px ;
+    padding-bottom:32px ;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc ;
+     padding-left:16px ;   
+}
 .portfolio-imag {}
 
 .portfolio-subtitle {
@@ -196,6 +341,7 @@ background: #404BBF;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -210,7 +356,10 @@ background: #404BBF;
 .footer {
     background: #2e2f42;
 }
-
+.footer-container {
+    padding-top:100px ;
+    padding-bottom:100px ;
+}
 .footer-logo {
     font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -219,6 +368,9 @@ background: #404BBF;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
+        
 }
 
 .footer-logo-color {
@@ -232,5 +384,5 @@ color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-
+    max-width: 264px;
 }
