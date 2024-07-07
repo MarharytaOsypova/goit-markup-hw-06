@@ -144,10 +144,10 @@ color:  #404BBF;
 
 .hero {
 padding: 188px 0 188px ;
-
+background-color: #2E2F42;
 }
 .hero-container {
-background-color: #2E2F42  ;
+
 
 
 
@@ -232,9 +232,10 @@ padding-top: 120px;
 }
 .team {
 padding: 120px 0 120px;
+background-color: #F4F4FD ;
 }
 .team-container {
-background-color: #F4F4FD ;
+
 
 }
 
