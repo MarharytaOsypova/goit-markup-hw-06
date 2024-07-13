@@ -289,7 +289,6 @@ background-color: #F4F4FD ;
 }
 .team-container {
 
-
 }
 
 .team-title {
@@ -312,8 +311,8 @@ background-color: #F4F4FD ;
 justify-content: center;
 }
 
-.icon-team {
-    
+.team-icon {
+    padding: 32px 0 32px ;
 }
 
 
