@@ -763,6 +763,13 @@ font-size: 12px;
 
 }
 
+
+.custom-class {
+display: inline-flex;
+
+}
+
+
 .modal-input {
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
