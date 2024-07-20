@@ -756,9 +756,9 @@ font-weight: 500;
 display: block;
 margin-bottom: 4px;
 font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
+line-height: 1.17;
+ letter-spacing: 0.04em;
+color: #8e8f99;
     
 
 }
@@ -842,10 +842,7 @@ font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
+    
     }
 
 
@@ -865,6 +862,7 @@ margin-bottom: 24px;
     fill: transparent;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
+margin-right: 8px;
 }
 
   /* .modal-check:checked + .modal-check-text span {
