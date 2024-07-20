@@ -584,7 +584,7 @@ background-color: #31D0AA;
 .footer-form {
     
      display: flex;
-    
+    gap:24px ;
    
     
 }
