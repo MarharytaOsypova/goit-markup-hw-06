@@ -488,11 +488,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 .footer {
     background: #2e2f42;
     
+    
 }
 .footer-container {
     padding-top:100px ;
     padding-bottom:100px ;
-   display: flex;
+   
     
 }
 .container-footer {
@@ -536,7 +537,7 @@ margin-right: 120px ;
 .footer-media {
     font-weight: 500 ;
 font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
 
@@ -579,3 +580,298 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-icon-link:focus {
 background-color: #31D0AA;
 }
+
+.footer-form {
+    
+     display: flex;
+    
+   
+    
+}
+
+
+
+.footer-input {
+border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+     margin-right: 24px; 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background-color: transparent;
+}
+
+.submit-footer {
+    fill:#fff ;
+    
+
+}
+
+.footer-subscribe {
+ margin-left:  auto;  
+
+    
+
+
+}
+
+.subscribe-text {
+margin-bottom: 16px;
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+color: #fff;
+}
+
+.footer-btn {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    border-radius: 4px;
+     padding: 8px 24px;
+    background: #4d5ae5;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+}
+
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+
+.backdrop.is-open {
+opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+
+.modal {
+width: 408px;
+min-height: 584px;
+background-color: #fcfcfc;
+border-radius: 4px;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+position: absolute;
+top: 50% ;
+left: 50% ;
+transform: translate(-50%, -50%);
+padding-top: 24px;
+padding-right: 24px;
+padding-bottom: 24px;
+padding-left: 24px;
+
+}
+
+/* .modal:hover {
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal:focus {
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.modal-close-btn {
+    display: block;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1); 
+    margin-bottom: 24px;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+}
+
+.icon-modal-close {
+    fill: #2e2f42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:focus,
+.modal-close-btn:hover {
+
+background-color: #404bbf;
+border: none;
+
+}
+
+.modal-close-btn:hover .icon-modal-close {
+fill:#fff ;
+
+}
+
+.modal-close-btn:focus .icon-modal-close {
+fill: #fff;
+
+}
+
+
+.modal-subtitle {
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+    
+}
+
+.modal-field {
+  margin-bottom: 8px;  
+}
+
+.form-label {
+font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    
+
+}
+
+.modal-input {
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        height: 40px;
+        background-color: transparent;
+        padding-left: 38px;
+        padding-right: 16px;
+        outline: transparent;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus { 
+   border-color: #4d5ae5;
+}
+
+.modal-input:focus + .modal-icon {
+    fill: #4d5ae5;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-top: 4px;
+}
+
+.modal-icon {
+    fill: #2e2f42;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.modal-comment::placeholder {
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+
+}
+
+.modal-comment {
+    width: 100%;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        height: 120px;
+        background-color: transparent;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        outline: transparent;
+        resize: none;
+    }
+
+    .modal-check-text {
+font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    }
+
+  .modal-check-text span {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  }
+
+  /* .modal-check:checked + .modal-check-text span {
+background-color: #404BBF;
+fill: #f4f4fd;
+
+  } */
+
+  input:checked+label>span {
+    background-color: #404BBF;
+    fill: #f4f4fd;
+  }
+
+
+  .footer-underlining {
+line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+        color: #4d5ae5;
+  }
+
+  .footer-send-btn {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+border-radius: 4px;
+margin-top: 24px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+border: none;
+    background: #4d5ae5;
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+
+
+  }
